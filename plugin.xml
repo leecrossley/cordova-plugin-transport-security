@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-transport-security" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>App Transport Security</name>
+    <author>Lee Crossley (http://ilee.co.uk/)</author>
+    <description>Cordova / PhoneGap Plugin to allow 'Arbitrary Loads' by adding
+        a declaration to the Info.plist file to bypass the iOS 9 App Transport Security</description>
+    <keywords>cordova, ios, app, security, transport, http, https, ats,
+        ssl, tls, nsapptransportsecurity, nsallowsarbitraryloads</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="ios">
+      <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+          <dict>
+              <key>NSAllowsArbitraryLoads</key>
+              <true/>
+          </dict>
+      </config-file>
+    </platform>
+</plugin>
