@@ -26,6 +26,30 @@ Source: [iOS Developer Library](https://developer.apple.com/library/prerelease/i
 
 It's important to note that this does not impact apps built with Xcode < 7 running on iOS 9.
 
+## Usage
+In case you want specify your domain as an exception domain in ATS, open `plugin.xml`, set `NSAllowsArbitraryLoads` value (line:17) to `false` and add `NSExceptionDomains` just like this:
+
+```
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <false/>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>www.github.com</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+      </dict>
+    </dict>
+</dict>
+```
+Find more about App Transport Security:  
+https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/
+
+
+
 ## Platforms
 
 Applies to iOS (9+) only.
