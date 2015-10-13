@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<plugin id="cordova-plugin-transport-security" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="cordova-plugin-transport-security" version="0.1.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>App Transport Security</name>
     <author>Lee Crossley (http://ilee.co.uk/)</author>
     <description>Cordova / PhoneGap Plugin to allow 'Arbitrary Loads' by adding
