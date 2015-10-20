@@ -45,6 +45,12 @@ In case you want specify your domain as an exception domain in ATS, open `plugin
     </dict>
 </dict>
 ```
+For the changes to `plugin.xml` to take effect, you must refresh the `ios.json` file (inside the `/plugin` folder):
+```
+$ cordova platform rm ios
+$ cordova platform add ios
+```
+
 Find more about App Transport Security:  
 https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/
 
