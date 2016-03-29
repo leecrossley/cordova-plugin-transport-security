@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-transport-security",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Lee Crossley <leee@hotmail.co.uk> (http://ilee.co.uk/)",
   "description": "Cordova / PhoneGap Plugin to allow 'Arbitrary Loads' by adding a declaration to the Info.plist file to bypass the iOS 9 App Transport Security",
   "cordova": {
